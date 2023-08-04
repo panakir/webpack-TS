@@ -4,11 +4,7 @@
     "commonjs": true,
     "es2021": true
   },
-  "extends": [
-    "standard-with-typescript",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ],
+  "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
   "plugins": ["@typeScript-eslint"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -16,6 +12,7 @@
     "project": "./tsconfig.json"
   },
   "rules": {
+    "no-console": "warn",
     "eol-last": "off",
     "import/extensions": "off",
     "import/prefer-default-export": "off",
